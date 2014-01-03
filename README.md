@@ -5,12 +5,12 @@ SGActionView
 
 SGActionView提供三种弹出视图:  
 
-* SGAlertMenu，类似于UIAlertView的提示框。  
-<img src='https://raw.github.com/sagiwei/SGActionView/master/light_alert.PNG' style='width:40%;'><img src='https://raw.github.com/sagiwei/SGActionView/master/dark_alert.PNG' style='width:40%;'>  
-* SGGridMenu，多用于选择服务、分享等操作，类似UIActivityViewController的功能
-<img src='https://raw.github.com/sagiwei/SGActionView/master/light_grid.PNG' style='width:40%;'><img src='https://raw.github.com/sagiwei/SGActionView/master/dark_grid.PNG' style='width:40%;'>  
-* SGSheetMenu，一个选项列表，可以设置默认值。  
-<img src='https://raw.github.com/sagiwei/SGActionView/master/light_sheet.PNG' style='width:40%;'><img src='https://raw.github.com/sagiwei/SGActionView/master/dark_sheet.PNG' style='width:40%;'>
+* SGAlertMenu，类似于UIAlertView的提示框。    
+![alert](https://raw.github.com/sagiwei/SGActionView/master/alert.png)
+* SGGridMenu，多用于选择服务、分享等操作，类似UIActivityViewController的功能  
+![grid](https://raw.github.com/sagiwei/SGActionView/master/grid.png)
+* SGSheetMenu，一个选项列表，可以设置默认值。    
+![sheet](https://raw.github.com/sagiwei/SGActionView/master/sheet.png)
 
 ##使用
 
