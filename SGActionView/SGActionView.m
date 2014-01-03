@@ -56,19 +56,19 @@
 
 - (void)tapAction:(UITapGestureRecognizer *)tapGesture{
     CGPoint touchPoint = [tapGesture locationInView:self];
-    if (self.menus.count > 1) {
-        SGBaseMenu *menu = self.menus.lastObject;
-        if (!CGRectContainsPoint(menu.frame, touchPoint)) {
-            [menu removeFromSuperview];
-            [self.menus removeLastObject];
-        }
-    }else{
-        SGBaseMenu *menu = self.menus.lastObject;
-        if (!CGRectContainsPoint(menu.frame, touchPoint)) {
-            [[SGActionView sharedActionView] dismissMenu:menu Animated:YES];
-            [self.menus removeAllObjects];
-        }
+//    if (self.menus.count > 1) {
+//        SGBaseMenu *menu = self.menus.lastObject;
+//        if (!CGRectContainsPoint(menu.frame, touchPoint)) {
+//            [menu removeFromSuperview];
+//            [self.menus removeLastObject];
+//        }
+//    }else{
+    SGBaseMenu *menu = self.menus.lastObject;
+    if (!CGRectContainsPoint(menu.frame, touchPoint)) {
+        [[SGActionView sharedActionView] dismissMenu:menu Animated:YES];
+        [self.menus removeObject:menu];
     }
+//    }
 }
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{

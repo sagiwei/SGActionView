@@ -45,7 +45,7 @@
         [SGActionView sharedActionView].style = selected == 0 ? SGActionViewStyleLight : SGActionViewStyleDark;
         if (indexPath.row == 0) {
             [SGActionView showAlertWithTitle:@"Alert View"
-                                     message:@"Just input your alert message here."
+                                     message:@"Just input your alert message here.\nUse '\\n' to create a line break.\nAuto height adjust your message."
                              leftButtonTitle:@"Cancel"
                             rightButtonTitle:@"OK"
                               selectedHandle:nil];
@@ -70,20 +70,10 @@
                                  selectedHandle:nil];
         }
     }
-//    double delayInSeconds = 0.2;
-//    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-//    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-//        [tableView deselectRowAtIndexPath:indexPath animated:YES];
-//    });
-    
-    double delayInSeconds = 2.0;
+    double delayInSeconds = 0.2;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-        [SGActionView showAlertWithTitle:@"Alert View"
-                                 message:@"Just input your alert message here."
-                         leftButtonTitle:@"Cancel"
-                        rightButtonTitle:@"OK"
-                          selectedHandle:nil];
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
     });
 }
 
