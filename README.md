@@ -46,7 +46,13 @@ SGActionView提供三种弹出视图:
 	                                       [UIImage imageNamed:@"dropbox"]]
 	                     selectedHandle:nil];
 
-##License
+## Third Party Bindings
+
+### React Native
+You may now use this library with [React Native](https://github.com/facebook/react-native) via the module [here](https://github.com/prscX/react-native-bottom-action-sheet)
+
+
+## License
 The MIT License (MIT)
 
 Copyright (c) [2014] [Sagi]
