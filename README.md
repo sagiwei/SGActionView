@@ -1,7 +1,7 @@
 SGActionView
 ============
 
-##介绍
+## 介绍
 
 SGActionView提供三种弹出视图:  
 
@@ -12,7 +12,7 @@ SGActionView提供三种弹出视图:
 * SGSheetMenu，一个选项列表，可以设置默认值。    
 ![sheet](sheet.png)
 
-##使用
+## 使用
 
 引入`SGActionView.h`  
 
